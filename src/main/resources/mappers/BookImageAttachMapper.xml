@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wdb007.baseservice.mapper.BookImageAttachMapper">
+  <resultMap id="BaseResultMap" type="com.wdb007.baseservice.model.BookImageAttach">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="rfid_tag_id" jdbcType="VARCHAR" property="rfid_tag_id" />
+    <result column="isbn" jdbcType="VARCHAR" property="isbn" />
+    <result column="image_type" jdbcType="INTEGER" property="image_type" />
+    <result column="image_area" jdbcType="INTEGER" property="image_area" />
+    <result column="image_url" jdbcType="VARCHAR" property="image_url" />
+    <result column="image_href" jdbcType="VARCHAR" property="image_href" />
+    <result column="display_index" jdbcType="TINYINT" property="display_index" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="create_time" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="update_time" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.wdb007.baseservice.model.BookImageAttach">
+    <result column="description" jdbcType="LONGVARCHAR" property="description" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, rfid_tag_id, isbn, image_type, image_area, image_url, image_href, display_index, 
+    create_time, update_time
+  </sql>
+  <sql id="Blob_Column_List">
+    description
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="ResultMapWithBLOBs">
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from book_image_attach
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  
+	  <select id="selectByImageUrl"  resultMap="ResultMapWithBLOBs">
+	  select 
+	  <include refid="Base_Column_List" />
+	  ,
+	  <include refid="Blob_Column_List" />
+	  from book_image_attach
+	  where image_url = #{arg0} and isbn=#{arg1}
+      </select>
+  
+  	<select id="selectBookInfoDetailsByIsbnOrTag" parameterType="java.util.Map" resultType="com.wdb007.baseservice.model.customer.BookInfoDetails">
+		select 
+			att.rfid_tag_id,
+			att.isbn,
+			att.image_type,
+			att.image_area,
+			att.image_url,
+			att.image_href,
+			att.display_index,
+			att.create_time,
+			att.update_time,
+			att.description,
+			info.isbn_no,
+			info.book_name,
+	        info.author,
+			info.press,
+			info.publication_date,
+			info.category,
+			info.price,
+			info.readable,
+			info.imgurl
+		 from book_image_attach  att join book_info info on att.isbn=info.isbn_no
+		<where>
+		    <if test="param1!= null">
+		         att.isbn = #{arg0}
+		    </if>
+		    <if test="param2!= null and param2!=''">
+		        AND att.rfid_tag_id =#{arg1}
+		    </if>
+	   </where>
+	</select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from book_image_attach
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.wdb007.baseservice.model.BookImageAttach">
+    insert into book_image_attach (id, rfid_tag_id, isbn, 
+      image_type, image_area, image_url, 
+      image_href, display_index, create_time, 
+      update_time, description)
+    values (#{id,jdbcType=BIGINT}, #{rfid_tag_id,jdbcType=VARCHAR}, #{isbn,jdbcType=VARCHAR}, 
+      #{image_type,jdbcType=INTEGER}, #{image_area,jdbcType=INTEGER}, #{image_url,jdbcType=VARCHAR}, 
+      #{image_href,jdbcType=VARCHAR}, #{display_index,jdbcType=TINYINT}, #{create_time,jdbcType=TIMESTAMP}, 
+      #{update_time,jdbcType=TIMESTAMP}, #{description,jdbcType=LONGVARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.wdb007.baseservice.model.BookImageAttach">
+    insert into book_image_attach
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="rfid_tag_id != null">
+        rfid_tag_id,
+      </if>
+      <if test="isbn != null">
+        isbn,
+      </if>
+      <if test="image_type != null">
+        image_type,
+      </if>
+      <if test="image_area != null">
+        image_area,
+      </if>
+      <if test="image_url != null">
+        image_url,
+      </if>
+      <if test="image_href != null">
+        image_href,
+      </if>
+      <if test="display_index != null">
+        display_index,
+      </if>
+      <if test="create_time != null">
+        create_time,
+      </if>
+      <if test="update_time != null">
+        update_time,
+      </if>
+      <if test="description != null">
+        description,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="rfid_tag_id != null">
+        #{rfid_tag_id,jdbcType=VARCHAR},
+      </if>
+      <if test="isbn != null">
+        #{isbn,jdbcType=VARCHAR},
+      </if>
+      <if test="image_type != null">
+        #{image_type,jdbcType=INTEGER},
+      </if>
+      <if test="image_area != null">
+        #{image_area,jdbcType=INTEGER},
+      </if>
+      <if test="image_url != null">
+        #{image_url,jdbcType=VARCHAR},
+      </if>
+      <if test="image_href != null">
+        #{image_href,jdbcType=VARCHAR},
+      </if>
+      <if test="display_index != null">
+        #{display_index,jdbcType=TINYINT},
+      </if>
+      <if test="create_time != null">
+        #{create_time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="update_time != null">
+        #{update_time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="description != null">
+        #{description,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.wdb007.baseservice.model.BookImageAttach">
+    update book_image_attach
+    <set>
+      <if test="rfid_tag_id != null">
+        rfid_tag_id = #{rfid_tag_id,jdbcType=VARCHAR},
+      </if>
+      <if test="isbn != null">
+        isbn = #{isbn,jdbcType=VARCHAR},
+      </if>
+      <if test="image_type != null">
+        image_type = #{image_type,jdbcType=INTEGER},
+      </if>
+      <if test="image_area != null">
+        image_area = #{image_area,jdbcType=INTEGER},
+      </if>
+      <if test="image_url != null">
+        image_url = #{image_url,jdbcType=VARCHAR},
+      </if>
+      <if test="image_href != null">
+        image_href = #{image_href,jdbcType=VARCHAR},
+      </if>
+      <if test="display_index != null">
+        display_index = #{display_index,jdbcType=TINYINT},
+      </if>
+      <if test="create_time != null">
+        create_time = #{create_time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="update_time != null">
+        update_time = #{update_time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="description != null">
+        description = #{description,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.wdb007.baseservice.model.BookImageAttach">
+    update book_image_attach
+    set rfid_tag_id = #{rfid_tag_id,jdbcType=VARCHAR},
+      isbn = #{isbn,jdbcType=VARCHAR},
+      image_type = #{image_type,jdbcType=INTEGER},
+      image_area = #{image_area,jdbcType=INTEGER},
+      image_url = #{image_url,jdbcType=VARCHAR},
+      image_href = #{image_href,jdbcType=VARCHAR},
+      display_index = #{display_index,jdbcType=TINYINT},
+      create_time = #{create_time,jdbcType=TIMESTAMP},
+      update_time = #{update_time,jdbcType=TIMESTAMP},
+      description = #{description,jdbcType=LONGVARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.wdb007.baseservice.model.BookImageAttach">
+    update book_image_attach
+    set rfid_tag_id = #{rfid_tag_id,jdbcType=VARCHAR},
+      isbn = #{isbn,jdbcType=VARCHAR},
+      image_type = #{image_type,jdbcType=INTEGER},
+      image_area = #{image_area,jdbcType=INTEGER},
+      image_url = #{image_url,jdbcType=VARCHAR},
+      image_href = #{image_href,jdbcType=VARCHAR},
+      display_index = #{display_index,jdbcType=TINYINT},
+      create_time = #{create_time,jdbcType=TIMESTAMP},
+      update_time = #{update_time,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

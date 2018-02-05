@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wdb007.baseservice.mapper.BookInitMappingMapper">
+  <resultMap id="BaseResultMap" type="com.wdb007.baseservice.model.BookInitMapping">
+    <id column="ID" jdbcType="BIGINT" property="ID" />
+    <result column="tag_id" jdbcType="VARCHAR" property="tag_id" />
+    <result column="isbn" jdbcType="VARCHAR" property="isbn" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="account" jdbcType="VARCHAR" property="account" />
+    <result column="tag_type" jdbcType="INTEGER" property="tag_type" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="create_time" />
+    <result column="gather_time" jdbcType="TIMESTAMP" property="gather_time" />
+    <result column="filing_time" jdbcType="TIMESTAMP" property="filing_time" />
+    <result column="isbn_type" jdbcType="INTEGER" property="isbn_type" />
+    <result column="isbn_sequence" jdbcType="INTEGER" property="isbn_sequence" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    ID, tag_id, isbn, status, account, tag_type, create_time, gather_time, filing_time, 
+    isbn_type, isbn_sequence
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from book_init_mapping
+    where ID = #{ID,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from book_init_mapping
+    where ID = #{ID,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.wdb007.baseservice.model.BookInitMapping">
+    insert into book_init_mapping (ID, tag_id, isbn, 
+      status, account, tag_type, 
+      create_time, gather_time, filing_time, 
+      isbn_type, isbn_sequence)
+    values (#{ID,jdbcType=BIGINT}, #{tag_id,jdbcType=VARCHAR}, #{isbn,jdbcType=VARCHAR}, 
+      #{status,jdbcType=INTEGER}, #{account,jdbcType=VARCHAR}, #{tag_type,jdbcType=INTEGER}, 
+      #{create_time,jdbcType=TIMESTAMP}, #{gather_time,jdbcType=TIMESTAMP}, #{filing_time,jdbcType=TIMESTAMP}, 
+      #{isbn_type,jdbcType=INTEGER}, #{isbn_sequence,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.wdb007.baseservice.model.BookInitMapping">
+    insert into book_init_mapping
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="ID != null">
+        ID,
+      </if>
+      <if test="tag_id != null">
+        tag_id,
+      </if>
+      <if test="isbn != null">
+        isbn,
+      </if>
+      <if test="status != null">
+        status,
+      </if>
+      <if test="account != null">
+        account,
+      </if>
+      <if test="tag_type != null">
+        tag_type,
+      </if>
+      <if test="create_time != null">
+        create_time,
+      </if>
+      <if test="gather_time != null">
+        gather_time,
+      </if>
+      <if test="filing_time != null">
+        filing_time,
+      </if>
+      <if test="isbn_type != null">
+        isbn_type,
+      </if>
+      <if test="isbn_sequence != null">
+        isbn_sequence,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="ID != null">
+        #{ID,jdbcType=BIGINT},
+      </if>
+      <if test="tag_id != null">
+        #{tag_id,jdbcType=VARCHAR},
+      </if>
+      <if test="isbn != null">
+        #{isbn,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=INTEGER},
+      </if>
+      <if test="account != null">
+        #{account,jdbcType=VARCHAR},
+      </if>
+      <if test="tag_type != null">
+        #{tag_type,jdbcType=INTEGER},
+      </if>
+      <if test="create_time != null">
+        #{create_time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="gather_time != null">
+        #{gather_time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="filing_time != null">
+        #{filing_time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="isbn_type != null">
+        #{isbn_type,jdbcType=INTEGER},
+      </if>
+      <if test="isbn_sequence != null">
+        #{isbn_sequence,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.wdb007.baseservice.model.BookInitMapping">
+    update book_init_mapping
+    <set>
+      <if test="tag_id != null">
+        tag_id = #{tag_id,jdbcType=VARCHAR},
+      </if>
+      <if test="isbn != null">
+        isbn = #{isbn,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        status = #{status,jdbcType=INTEGER},
+      </if>
+      <if test="account != null">
+        account = #{account,jdbcType=VARCHAR},
+      </if>
+      <if test="tag_type != null">
+        tag_type = #{tag_type,jdbcType=INTEGER},
+      </if>
+      <if test="create_time != null">
+        create_time = #{create_time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="gather_time != null">
+        gather_time = #{gather_time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="filing_time != null">
+        filing_time = #{filing_time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="isbn_type != null">
+        isbn_type = #{isbn_type,jdbcType=INTEGER},
+      </if>
+      <if test="isbn_sequence != null">
+        isbn_sequence = #{isbn_sequence,jdbcType=INTEGER},
+      </if>
+    </set>
+    where ID = #{ID,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.wdb007.baseservice.model.BookInitMapping">
+    update book_init_mapping
+    set tag_id = #{tag_id,jdbcType=VARCHAR},
+      isbn = #{isbn,jdbcType=VARCHAR},
+      status = #{status,jdbcType=INTEGER},
+      account = #{account,jdbcType=VARCHAR},
+      tag_type = #{tag_type,jdbcType=INTEGER},
+      create_time = #{create_time,jdbcType=TIMESTAMP},
+      gather_time = #{gather_time,jdbcType=TIMESTAMP},
+      filing_time = #{filing_time,jdbcType=TIMESTAMP},
+      isbn_type = #{isbn_type,jdbcType=INTEGER},
+      isbn_sequence = #{isbn_sequence,jdbcType=INTEGER}
+    where ID = #{ID,jdbcType=BIGINT}
+  </update>
+</mapper>

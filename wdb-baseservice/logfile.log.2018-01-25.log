@@ -1,0 +1,1166 @@
+2018-01-25 14:44:18.388 [restartedMain] INFO  com.wdb007.baseservice.Application -
+				Starting Application on DESKTOP-G9V90BP with PID 12264 (D:\CodeRepertory\Gitee\wdb_book_management\target\classes started by tianzhi in D:\CodeRepertory\Gitee\wdb_book_management)
+2018-01-25 14:44:18.392 [restartedMain] INFO  com.wdb007.baseservice.Application -
+				The following profiles are active: pub
+2018-01-25 14:44:18.455 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -
+				Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@92434c8: startup date [Thu Jan 25 14:44:18 CST 2018]; root of context hierarchy
+2018-01-25 14:44:18.652 [background-preinit] INFO  org.hibernate.validator.internal.util.Version -
+				HV000001: Hibernate Validator 5.3.5.Final
+2018-01-25 14:44:20.241 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c373aed6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-25 14:44:20.685 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer -
+				Tomcat initialized with port(s): 8809 (http)
+2018-01-25 14:44:20.696 [restartedMain] INFO  org.apache.catalina.core.StandardService -
+				Starting service [Tomcat]
+2018-01-25 14:44:20.697 [restartedMain] INFO  org.apache.catalina.core.StandardEngine -
+				Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-25 14:44:20.804 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+				Initializing Spring embedded WebApplicationContext
+2018-01-25 14:44:20.805 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader -
+				Root WebApplicationContext: initialization completed in 2349 ms
+2018-01-25 14:44:20.949 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean -
+				Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-25 14:44:20.953 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-25 14:44:20.954 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-25 14:44:20.954 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-25 14:44:20.954 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-25 14:44:21.997 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_attachment/scanInitImageAttach],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.wdb007.baseservice.controller.BookAttachmentController.scanInitImageAttach(java.lang.String) throws java.lang.NumberFormatException,java.io.IOException
+2018-01-25 14:44:21.999 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_attachment/setBookCoverFromFiles],methods=[GET]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.BookAttachmentController.setBookCoverFromFiles(java.lang.String) throws java.lang.NumberFormatException,java.io.IOException
+2018-01-25 14:44:22.000 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_attachment/scanInitImageAttachTiming],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.wdb007.baseservice.controller.BookAttachmentController.initImageAttach(java.lang.String) throws java.lang.NumberFormatException,java.io.IOException
+2018-01-25 14:44:22.005 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_info/getBookInfoList],methods=[GET]}" onto public java.util.List<com.wdb007.baseservice.model.customer.BookInfoDetails> com.wdb007.baseservice.controller.BookInfoController.getBookDetailsByIsbnOrRFID(java.lang.String,java.lang.String)
+2018-01-25 14:44:22.006 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_info/getSingleBookInfo],methods=[GET]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.BookInfoController.GetBookInfo(java.lang.String)
+2018-01-25 14:44:22.009 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/bookmgmt/gatherImagesByISBN],methods=[POST]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.GatherBookInfoController.gatherImagesByISBN(java.util.List<java.lang.String>)
+2018-01-25 14:44:22.010 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/bookmgmt/resolveBookInfoByISBN],methods=[GET]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.GatherBookInfoController.resolveBookInfo()
+2018-01-25 14:44:22.011 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/bookmgmt/resolveBookInfo],methods=[POST]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.GatherBookInfoController.resolveBookInfo(java.util.List<java.util.Map<java.lang.String, java.lang.String>>,com.wdb007.baseservice.model.GatherSourceTypeEnum)
+2018-01-25 14:44:22.012 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/bookmgmt/testFiles],methods=[GET]}" onto public java.io.File[] com.wdb007.baseservice.controller.GatherBookInfoController.testFileList(java.lang.String)
+2018-01-25 14:44:22.012 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/dianping/resolveShopInfo],methods=[GET]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.GatherOrganizationController.resolveShopInfo()
+2018-01-25 14:44:22.013 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/],methods=[GET]}" onto public java.lang.String com.wdb007.baseservice.controller.HomeController.index()
+2018-01-25 14:44:22.014 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-01-25 14:44:22.017 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-01-25 14:44:22.019 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-01-25 14:44:22.020 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-01-25 14:44:22.026 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-25 14:44:22.026 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-25 14:44:22.437 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+				Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@92434c8: startup date [Thu Jan 25 14:44:18 CST 2018]; root of context hierarchy
+2018-01-25 14:44:22.495 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 14:44:22.495 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 14:44:22.539 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 14:44:22.793 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer -
+				LiveReload server is running on port 35729
+2018-01-25 14:44:22.980 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Registering beans for JMX exposure on startup
+2018-01-25 14:44:22.992 [restartedMain] INFO  o.s.context.support.DefaultLifecycleProcessor -
+				Starting beans in phase 2147483647
+2018-01-25 14:44:22.993 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -
+				Context refreshed
+2018-01-25 14:44:23.014 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -
+				Found 1 custom documentation plugin(s)
+2018-01-25 14:44:23.027 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner -
+				Scanning for api listing references
+2018-01-25 14:44:23.294 [restartedMain] WARN  s.d.s.w.readers.parameter.ParameterDataTypeReader -
+				Trying to infer dataType com.wdb007.baseservice.model.GatherSourceTypeEnum
+2018-01-25 14:44:23.327 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor -
+				No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-01-25 14:44:23.352 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Initializing ProtocolHandler ["http-nio-8809"]
+2018-01-25 14:44:23.375 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Starting ProtocolHandler ["http-nio-8809"]
+2018-01-25 14:44:23.389 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool -
+				Using a shared selector for servlet write/read
+2018-01-25 14:44:23.416 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer -
+				Tomcat started on port(s): 8809 (http)
+2018-01-25 14:44:23.424 [restartedMain] INFO  com.wdb007.baseservice.Application -
+				Started Application in 5.242 seconds (JVM running for 5.854)
+2018-01-25 14:44:23.954 [restartedMain] INFO  com.wdb007.baseservice.Application -
+				SpringBoot Start Success
+2018-01-25 14:44:38.158 [http-nio-8809-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+				Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-25 14:44:38.158 [http-nio-8809-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet -
+				FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-25 14:44:38.186 [http-nio-8809-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet -
+				FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+2018-01-25 14:45:50.554 [Thread-6] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -
+				Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@92434c8: startup date [Thu Jan 25 14:44:18 CST 2018]; root of context hierarchy
+2018-01-25 14:45:50.555 [Thread-6] INFO  o.s.context.support.DefaultLifecycleProcessor -
+				Stopping beans in phase 2147483647
+2018-01-25 14:45:50.556 [Thread-6] WARN  o.s.beans.factory.support.DisposableBeanAdapter -
+				Invocation of destroy method failed on bean with name 'classPathFileSystemWatcher': java.lang.NullPointerException
+2018-01-25 14:45:50.557 [Thread-6] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Unregistering JMX-exposed beans on shutdown
+2018-01-25 14:45:50.811 [restartedMain] INFO  com.wdb007.baseservice.Application -
+				Starting Application on DESKTOP-G9V90BP with PID 12264 (D:\CodeRepertory\Gitee\wdb_book_management\target\classes started by tianzhi in D:\CodeRepertory\Gitee\wdb_book_management)
+2018-01-25 14:45:50.811 [restartedMain] INFO  com.wdb007.baseservice.Application -
+				The following profiles are active: pub
+2018-01-25 14:45:50.815 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -
+				Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@52a4b02f: startup date [Thu Jan 25 14:45:50 CST 2018]; root of context hierarchy
+2018-01-25 14:45:51.506 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c373aed6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-25 14:45:51.572 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer -
+				Tomcat initialized with port(s): 8809 (http)
+2018-01-25 14:45:51.573 [restartedMain] INFO  org.apache.catalina.core.StandardService -
+				Starting service [Tomcat]
+2018-01-25 14:45:51.573 [restartedMain] INFO  org.apache.catalina.core.StandardEngine -
+				Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-25 14:45:51.588 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+				Initializing Spring embedded WebApplicationContext
+2018-01-25 14:45:51.589 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader -
+				Root WebApplicationContext: initialization completed in 774 ms
+2018-01-25 14:45:51.625 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean -
+				Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-25 14:45:51.626 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-25 14:45:51.626 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-25 14:45:51.626 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-25 14:45:51.626 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-25 14:45:51.965 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_attachment/scanInitImageAttach],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.wdb007.baseservice.controller.BookAttachmentController.scanInitImageAttach(java.lang.String) throws java.lang.NumberFormatException,java.io.IOException
+2018-01-25 14:45:51.966 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_attachment/setBookCoverFromFiles],methods=[GET]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.BookAttachmentController.setBookCoverFromFiles(java.lang.String) throws java.lang.NumberFormatException,java.io.IOException
+2018-01-25 14:45:51.966 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_attachment/scanInitImageAttachTiming],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.wdb007.baseservice.controller.BookAttachmentController.initImageAttach(java.lang.String) throws java.lang.NumberFormatException,java.io.IOException
+2018-01-25 14:45:51.968 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_info/getBookInfoList],methods=[GET]}" onto public java.util.List<com.wdb007.baseservice.model.customer.BookInfoDetails> com.wdb007.baseservice.controller.BookInfoController.getBookDetailsByIsbnOrRFID(java.lang.String,java.lang.String)
+2018-01-25 14:45:51.969 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_info/getSingleBookInfo],methods=[GET]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.BookInfoController.GetBookInfo(java.lang.String)
+2018-01-25 14:45:51.970 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/bookmgmt/gatherImagesByISBN],methods=[POST]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.GatherBookInfoController.gatherImagesByISBN(java.util.List<java.lang.String>)
+2018-01-25 14:45:51.971 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/bookmgmt/resolveBookInfoByISBN],methods=[GET]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.GatherBookInfoController.resolveBookInfo()
+2018-01-25 14:45:51.971 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/bookmgmt/resolveBookInfo],methods=[POST]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.GatherBookInfoController.resolveBookInfo(java.util.List<java.util.Map<java.lang.String, java.lang.String>>,com.wdb007.baseservice.model.GatherSourceTypeEnum)
+2018-01-25 14:45:51.972 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/bookmgmt/testFiles],methods=[GET]}" onto public java.io.File[] com.wdb007.baseservice.controller.GatherBookInfoController.testFileList(java.lang.String)
+2018-01-25 14:45:51.972 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/dianping/resolveShopInfo],methods=[GET]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.GatherOrganizationController.resolveShopInfo()
+2018-01-25 14:45:51.973 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/],methods=[GET]}" onto public java.lang.String com.wdb007.baseservice.controller.HomeController.index()
+2018-01-25 14:45:51.974 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-01-25 14:45:51.975 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-01-25 14:45:51.976 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-01-25 14:45:51.976 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-01-25 14:45:51.977 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-25 14:45:51.978 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-25 14:45:52.064 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+				Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@52a4b02f: startup date [Thu Jan 25 14:45:50 CST 2018]; root of context hierarchy
+2018-01-25 14:45:52.077 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 14:45:52.077 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 14:45:52.091 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 14:45:52.136 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer -
+				LiveReload server is running on port 35729
+2018-01-25 14:45:52.274 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Registering beans for JMX exposure on startup
+2018-01-25 14:45:52.277 [restartedMain] INFO  o.s.context.support.DefaultLifecycleProcessor -
+				Starting beans in phase 2147483647
+2018-01-25 14:45:52.277 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -
+				Context refreshed
+2018-01-25 14:45:52.278 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -
+				Found 1 custom documentation plugin(s)
+2018-01-25 14:45:52.283 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner -
+				Scanning for api listing references
+2018-01-25 14:45:52.360 [restartedMain] WARN  s.d.s.w.readers.parameter.ParameterDataTypeReader -
+				Trying to infer dataType com.wdb007.baseservice.model.GatherSourceTypeEnum
+2018-01-25 14:45:52.371 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor -
+				No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-01-25 14:45:52.373 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Initializing ProtocolHandler ["http-nio-8809"]
+2018-01-25 14:45:52.374 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Starting ProtocolHandler ["http-nio-8809"]
+2018-01-25 14:45:52.376 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool -
+				Using a shared selector for servlet write/read
+2018-01-25 14:45:52.380 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer -
+				Tomcat started on port(s): 8809 (http)
+2018-01-25 14:45:52.384 [restartedMain] INFO  com.wdb007.baseservice.Application -
+				Started Application in 1.606 seconds (JVM running for 94.813)
+2018-01-25 14:45:52.517 [restartedMain] INFO  com.wdb007.baseservice.Application -
+				SpringBoot Start Success
+2018-01-25 14:45:54.544 [Thread-12] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -
+				Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@52a4b02f: startup date [Thu Jan 25 14:45:50 CST 2018]; root of context hierarchy
+2018-01-25 14:45:54.545 [Thread-12] INFO  o.s.context.support.DefaultLifecycleProcessor -
+				Stopping beans in phase 2147483647
+2018-01-25 14:45:54.546 [Thread-12] WARN  o.s.beans.factory.support.DisposableBeanAdapter -
+				Invocation of destroy method failed on bean with name 'classPathFileSystemWatcher': java.lang.NullPointerException
+2018-01-25 14:45:54.546 [Thread-12] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Unregistering JMX-exposed beans on shutdown
+2018-01-25 14:45:54.754 [restartedMain] INFO  com.wdb007.baseservice.Application -
+				Starting Application on DESKTOP-G9V90BP with PID 12264 (D:\CodeRepertory\Gitee\wdb_book_management\target\classes started by tianzhi in D:\CodeRepertory\Gitee\wdb_book_management)
+2018-01-25 14:45:54.754 [restartedMain] INFO  com.wdb007.baseservice.Application -
+				The following profiles are active: pub
+2018-01-25 14:45:54.757 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -
+				Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@41e1b206: startup date [Thu Jan 25 14:45:54 CST 2018]; root of context hierarchy
+2018-01-25 14:45:55.349 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c373aed6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-25 14:45:55.416 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer -
+				Tomcat initialized with port(s): 8809 (http)
+2018-01-25 14:45:55.417 [restartedMain] INFO  org.apache.catalina.core.StandardService -
+				Starting service [Tomcat]
+2018-01-25 14:45:55.418 [restartedMain] INFO  org.apache.catalina.core.StandardEngine -
+				Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-25 14:45:55.431 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+				Initializing Spring embedded WebApplicationContext
+2018-01-25 14:45:55.432 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader -
+				Root WebApplicationContext: initialization completed in 675 ms
+2018-01-25 14:45:55.473 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean -
+				Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-25 14:45:55.473 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-25 14:45:55.473 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-25 14:45:55.474 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-25 14:45:55.474 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-25 14:45:55.809 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_attachment/scanInitImageAttach],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.wdb007.baseservice.controller.BookAttachmentController.scanInitImageAttach(java.lang.String) throws java.lang.NumberFormatException,java.io.IOException
+2018-01-25 14:45:55.810 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_attachment/setBookCoverFromFiles],methods=[GET]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.BookAttachmentController.setBookCoverFromFiles(java.lang.String) throws java.lang.NumberFormatException,java.io.IOException
+2018-01-25 14:45:55.810 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_attachment/scanInitImageAttachTiming],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.wdb007.baseservice.controller.BookAttachmentController.initImageAttach(java.lang.String) throws java.lang.NumberFormatException,java.io.IOException
+2018-01-25 14:45:55.811 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_info/getBookInfoList],methods=[GET]}" onto public java.util.List<com.wdb007.baseservice.model.customer.BookInfoDetails> com.wdb007.baseservice.controller.BookInfoController.getBookDetailsByIsbnOrRFID(java.lang.String,java.lang.String)
+2018-01-25 14:45:55.812 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_info/getSingleBookInfo],methods=[GET]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.BookInfoController.GetBookInfo(java.lang.String)
+2018-01-25 14:45:55.814 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/bookmgmt/gatherImagesByISBN],methods=[POST]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.GatherBookInfoController.gatherImagesByISBN(java.util.List<java.lang.String>)
+2018-01-25 14:45:55.814 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/bookmgmt/resolveBookInfoByISBN],methods=[GET]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.GatherBookInfoController.resolveBookInfo()
+2018-01-25 14:45:55.815 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/bookmgmt/resolveBookInfo],methods=[POST]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.GatherBookInfoController.resolveBookInfo(java.util.List<java.util.Map<java.lang.String, java.lang.String>>,com.wdb007.baseservice.model.GatherSourceTypeEnum)
+2018-01-25 14:45:55.815 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/bookmgmt/testFiles],methods=[GET]}" onto public java.io.File[] com.wdb007.baseservice.controller.GatherBookInfoController.testFileList(java.lang.String)
+2018-01-25 14:45:55.816 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/dianping/resolveShopInfo],methods=[GET]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.GatherOrganizationController.resolveShopInfo()
+2018-01-25 14:45:55.816 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/],methods=[GET]}" onto public java.lang.String com.wdb007.baseservice.controller.HomeController.index()
+2018-01-25 14:45:55.817 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-01-25 14:45:55.819 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-01-25 14:45:55.820 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-01-25 14:45:55.820 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-01-25 14:45:55.822 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-25 14:45:55.823 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-25 14:45:55.903 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+				Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@41e1b206: startup date [Thu Jan 25 14:45:54 CST 2018]; root of context hierarchy
+2018-01-25 14:45:55.915 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 14:45:55.915 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 14:45:55.934 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 14:45:55.993 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer -
+				LiveReload server is running on port 35729
+2018-01-25 14:45:56.158 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Registering beans for JMX exposure on startup
+2018-01-25 14:45:56.162 [restartedMain] INFO  o.s.context.support.DefaultLifecycleProcessor -
+				Starting beans in phase 2147483647
+2018-01-25 14:45:56.162 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -
+				Context refreshed
+2018-01-25 14:45:56.163 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -
+				Found 1 custom documentation plugin(s)
+2018-01-25 14:45:56.168 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner -
+				Scanning for api listing references
+2018-01-25 14:45:56.234 [restartedMain] WARN  s.d.s.w.readers.parameter.ParameterDataTypeReader -
+				Trying to infer dataType com.wdb007.baseservice.model.GatherSourceTypeEnum
+2018-01-25 14:45:56.244 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor -
+				No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-01-25 14:45:56.246 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Initializing ProtocolHandler ["http-nio-8809"]
+2018-01-25 14:45:56.246 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Starting ProtocolHandler ["http-nio-8809"]
+2018-01-25 14:45:56.247 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool -
+				Using a shared selector for servlet write/read
+2018-01-25 14:45:56.253 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer -
+				Tomcat started on port(s): 8809 (http)
+2018-01-25 14:45:56.256 [restartedMain] INFO  com.wdb007.baseservice.Application -
+				Started Application in 1.53 seconds (JVM running for 98.686)
+2018-01-25 14:45:56.399 [restartedMain] INFO  com.wdb007.baseservice.Application -
+				SpringBoot Start Success
+2018-01-25 14:46:07.463 [restartedMain] INFO  com.wdb007.baseservice.Application -
+				Starting Application on DESKTOP-G9V90BP with PID 39992 (D:\CodeRepertory\Gitee\wdb_book_management\target\classes started by tianzhi in D:\CodeRepertory\Gitee\wdb_book_management)
+2018-01-25 14:46:07.466 [restartedMain] INFO  com.wdb007.baseservice.Application -
+				The following profiles are active: pub
+2018-01-25 14:46:07.518 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -
+				Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@31e130a8: startup date [Thu Jan 25 14:46:07 CST 2018]; root of context hierarchy
+2018-01-25 14:46:07.698 [background-preinit] INFO  org.hibernate.validator.internal.util.Version -
+				HV000001: Hibernate Validator 5.3.5.Final
+2018-01-25 14:46:09.120 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c15af328] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-25 14:46:09.526 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer -
+				Tomcat initialized with port(s): 8809 (http)
+2018-01-25 14:46:09.536 [restartedMain] INFO  org.apache.catalina.core.StandardService -
+				Starting service [Tomcat]
+2018-01-25 14:46:09.537 [restartedMain] INFO  org.apache.catalina.core.StandardEngine -
+				Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-25 14:46:09.637 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+				Initializing Spring embedded WebApplicationContext
+2018-01-25 14:46:09.637 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader -
+				Root WebApplicationContext: initialization completed in 2119 ms
+2018-01-25 14:46:09.777 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean -
+				Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-25 14:46:09.783 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-25 14:46:09.784 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-25 14:46:09.784 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-25 14:46:09.784 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-25 14:46:10.790 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_attachment/scanInitImageAttach],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.wdb007.baseservice.controller.BookAttachmentController.scanInitImageAttach(java.lang.String) throws java.lang.NumberFormatException,java.io.IOException
+2018-01-25 14:46:10.792 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_attachment/setBookCoverFromFiles],methods=[GET]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.BookAttachmentController.setBookCoverFromFiles(java.lang.String) throws java.lang.NumberFormatException,java.io.IOException
+2018-01-25 14:46:10.792 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_attachment/scanInitImageAttachTiming],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.wdb007.baseservice.controller.BookAttachmentController.initImageAttach(java.lang.String) throws java.lang.NumberFormatException,java.io.IOException
+2018-01-25 14:46:10.795 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_info/getBookInfoList],methods=[GET]}" onto public java.util.List<com.wdb007.baseservice.model.customer.BookInfoDetails> com.wdb007.baseservice.controller.BookInfoController.getBookDetailsByIsbnOrRFID(java.lang.String,java.lang.String)
+2018-01-25 14:46:10.796 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_info/getSingleBookInfo],methods=[GET]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.BookInfoController.GetBookInfo(java.lang.String)
+2018-01-25 14:46:10.798 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/bookmgmt/testFiles],methods=[GET]}" onto public java.io.File[] com.wdb007.baseservice.controller.GatherBookInfoController.testFileList(java.lang.String)
+2018-01-25 14:46:10.799 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/bookmgmt/resolveBookInfo],methods=[POST]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.GatherBookInfoController.resolveBookInfo(java.util.List<java.util.Map<java.lang.String, java.lang.String>>,com.wdb007.baseservice.model.GatherSourceTypeEnum)
+2018-01-25 14:46:10.799 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/bookmgmt/resolveBookInfoByISBN],methods=[GET]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.GatherBookInfoController.resolveBookInfo()
+2018-01-25 14:46:10.800 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/bookmgmt/gatherImagesByISBN],methods=[POST]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.GatherBookInfoController.gatherImagesByISBN(java.util.List<java.lang.String>)
+2018-01-25 14:46:10.801 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/dianping/resolveShopInfo],methods=[GET]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.GatherOrganizationController.resolveShopInfo()
+2018-01-25 14:46:10.802 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/],methods=[GET]}" onto public java.lang.String com.wdb007.baseservice.controller.HomeController.index()
+2018-01-25 14:46:10.803 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-01-25 14:46:10.806 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-01-25 14:46:10.806 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-01-25 14:46:10.807 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-01-25 14:46:10.810 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-25 14:46:10.810 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-25 14:46:11.213 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+				Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@31e130a8: startup date [Thu Jan 25 14:46:07 CST 2018]; root of context hierarchy
+2018-01-25 14:46:11.277 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 14:46:11.277 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 14:46:11.329 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 14:46:11.643 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer -
+				LiveReload server is running on port 35729
+2018-01-25 14:46:11.818 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Registering beans for JMX exposure on startup
+2018-01-25 14:46:11.827 [restartedMain] INFO  o.s.context.support.DefaultLifecycleProcessor -
+				Starting beans in phase 2147483647
+2018-01-25 14:46:11.828 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -
+				Context refreshed
+2018-01-25 14:46:11.853 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -
+				Found 1 custom documentation plugin(s)
+2018-01-25 14:46:11.869 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner -
+				Scanning for api listing references
+2018-01-25 14:46:12.066 [restartedMain] WARN  s.d.s.w.readers.parameter.ParameterDataTypeReader -
+				Trying to infer dataType com.wdb007.baseservice.model.GatherSourceTypeEnum
+2018-01-25 14:46:12.088 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor -
+				No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-01-25 14:46:12.102 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Initializing ProtocolHandler ["http-nio-8809"]
+2018-01-25 14:46:12.117 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Starting ProtocolHandler ["http-nio-8809"]
+2018-01-25 14:46:12.132 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool -
+				Using a shared selector for servlet write/read
+2018-01-25 14:46:12.167 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer -
+				Tomcat started on port(s): 8809 (http)
+2018-01-25 14:46:12.175 [restartedMain] INFO  com.wdb007.baseservice.Application -
+				Started Application in 4.905 seconds (JVM running for 5.396)
+2018-01-25 14:46:12.673 [restartedMain] INFO  com.wdb007.baseservice.Application -
+				SpringBoot Start Success
+2018-01-25 14:46:18.899 [http-nio-8809-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+				Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-25 14:46:18.899 [http-nio-8809-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
+				FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-25 14:46:18.928 [http-nio-8809-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
+				FrameworkServlet 'dispatcherServlet': initialization completed in 29 ms
+2018-01-25 14:48:53.734 [Thread-6] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -
+				Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@31e130a8: startup date [Thu Jan 25 14:46:07 CST 2018]; root of context hierarchy
+2018-01-25 14:48:53.737 [Thread-6] INFO  o.s.context.support.DefaultLifecycleProcessor -
+				Stopping beans in phase 2147483647
+2018-01-25 14:48:53.737 [Thread-6] WARN  o.s.beans.factory.support.DisposableBeanAdapter -
+				Invocation of destroy method failed on bean with name 'classPathFileSystemWatcher': java.lang.NullPointerException
+2018-01-25 14:48:53.738 [Thread-6] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Unregistering JMX-exposed beans on shutdown
+2018-01-25 14:48:53.980 [restartedMain] INFO  com.wdb007.baseservice.Application -
+				Starting Application on DESKTOP-G9V90BP with PID 39992 (D:\CodeRepertory\Gitee\wdb_book_management\target\classes started by tianzhi in D:\CodeRepertory\Gitee\wdb_book_management)
+2018-01-25 14:48:53.980 [restartedMain] INFO  com.wdb007.baseservice.Application -
+				The following profiles are active: pub
+2018-01-25 14:48:53.984 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -
+				Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3434f58b: startup date [Thu Jan 25 14:48:53 CST 2018]; root of context hierarchy
+2018-01-25 14:48:54.692 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c15af328] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-25 14:48:54.790 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer -
+				Tomcat initialized with port(s): 8809 (http)
+2018-01-25 14:48:54.791 [restartedMain] INFO  org.apache.catalina.core.StandardService -
+				Starting service [Tomcat]
+2018-01-25 14:48:54.792 [restartedMain] INFO  org.apache.catalina.core.StandardEngine -
+				Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-25 14:48:54.811 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+				Initializing Spring embedded WebApplicationContext
+2018-01-25 14:48:54.812 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader -
+				Root WebApplicationContext: initialization completed in 828 ms
+2018-01-25 14:48:54.865 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean -
+				Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-25 14:48:54.866 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-25 14:48:54.867 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-25 14:48:54.868 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-25 14:48:54.868 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-25 14:48:55.303 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_attachment/scanInitImageAttach],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.wdb007.baseservice.controller.BookAttachmentController.scanInitImageAttach(java.lang.String) throws java.lang.NumberFormatException,java.io.IOException
+2018-01-25 14:48:55.304 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_attachment/setBookCoverFromFiles],methods=[GET]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.BookAttachmentController.setBookCoverFromFiles(java.lang.String) throws java.lang.NumberFormatException,java.io.IOException
+2018-01-25 14:48:55.306 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_attachment/scanInitImageAttachTiming],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.wdb007.baseservice.controller.BookAttachmentController.initImageAttach(java.lang.String) throws java.lang.NumberFormatException,java.io.IOException
+2018-01-25 14:48:55.307 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_info/getBookInfoList],methods=[GET]}" onto public java.util.List<com.wdb007.baseservice.model.customer.BookInfoDetails> com.wdb007.baseservice.controller.BookInfoController.getBookDetailsByIsbnOrRFID(java.lang.String,java.lang.String)
+2018-01-25 14:48:55.307 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_info/getSingleBookInfo],methods=[GET]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.BookInfoController.GetBookInfo(java.lang.String)
+2018-01-25 14:48:55.309 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/bookmgmt/testFiles],methods=[GET]}" onto public java.io.File[] com.wdb007.baseservice.controller.GatherBookInfoController.testFileList(java.lang.String)
+2018-01-25 14:48:55.309 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/bookmgmt/resolveBookInfo],methods=[POST]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.GatherBookInfoController.resolveBookInfo(java.util.List<java.util.Map<java.lang.String, java.lang.String>>,com.wdb007.baseservice.model.GatherSourceTypeEnum)
+2018-01-25 14:48:55.309 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/bookmgmt/resolveBookInfoByISBN],methods=[GET]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.GatherBookInfoController.resolveBookInfo()
+2018-01-25 14:48:55.310 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/bookmgmt/gatherImagesByISBN],methods=[POST]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.GatherBookInfoController.gatherImagesByISBN(java.util.List<java.lang.String>)
+2018-01-25 14:48:55.311 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/dianping/resolveShopInfo],methods=[GET]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.GatherOrganizationController.resolveShopInfo()
+2018-01-25 14:48:55.311 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/],methods=[GET]}" onto public java.lang.String com.wdb007.baseservice.controller.HomeController.index()
+2018-01-25 14:48:55.312 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-01-25 14:48:55.313 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-01-25 14:48:55.313 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-01-25 14:48:55.313 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-01-25 14:48:55.315 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-25 14:48:55.315 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-25 14:48:55.423 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+				Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3434f58b: startup date [Thu Jan 25 14:48:53 CST 2018]; root of context hierarchy
+2018-01-25 14:48:55.435 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 14:48:55.435 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 14:48:55.448 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 14:48:55.505 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer -
+				LiveReload server is running on port 35729
+2018-01-25 14:48:55.640 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Registering beans for JMX exposure on startup
+2018-01-25 14:48:55.645 [restartedMain] INFO  o.s.context.support.DefaultLifecycleProcessor -
+				Starting beans in phase 2147483647
+2018-01-25 14:48:55.646 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -
+				Context refreshed
+2018-01-25 14:48:55.647 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -
+				Found 1 custom documentation plugin(s)
+2018-01-25 14:48:55.650 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner -
+				Scanning for api listing references
+2018-01-25 14:48:55.756 [restartedMain] WARN  s.d.s.w.readers.parameter.ParameterDataTypeReader -
+				Trying to infer dataType com.wdb007.baseservice.model.GatherSourceTypeEnum
+2018-01-25 14:48:55.768 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor -
+				No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-01-25 14:48:55.771 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Initializing ProtocolHandler ["http-nio-8809"]
+2018-01-25 14:48:55.772 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Starting ProtocolHandler ["http-nio-8809"]
+2018-01-25 14:48:55.774 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool -
+				Using a shared selector for servlet write/read
+2018-01-25 14:48:55.789 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer -
+				Tomcat started on port(s): 8809 (http)
+2018-01-25 14:48:55.794 [restartedMain] INFO  com.wdb007.baseservice.Application -
+				Started Application in 1.852 seconds (JVM running for 169.015)
+2018-01-25 14:48:55.962 [restartedMain] INFO  com.wdb007.baseservice.Application -
+				SpringBoot Start Success
+2018-01-25 14:49:19.005 [Thread-23] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -
+				Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3434f58b: startup date [Thu Jan 25 14:48:53 CST 2018]; root of context hierarchy
+2018-01-25 14:49:19.007 [Thread-23] INFO  o.s.context.support.DefaultLifecycleProcessor -
+				Stopping beans in phase 2147483647
+2018-01-25 14:49:19.007 [Thread-23] WARN  o.s.beans.factory.support.DisposableBeanAdapter -
+				Invocation of destroy method failed on bean with name 'classPathFileSystemWatcher': java.lang.NullPointerException
+2018-01-25 14:49:19.007 [Thread-23] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Unregistering JMX-exposed beans on shutdown
+2018-01-25 14:49:19.255 [restartedMain] INFO  com.wdb007.baseservice.Application -
+				Starting Application on DESKTOP-G9V90BP with PID 39992 (D:\CodeRepertory\Gitee\wdb_book_management\target\classes started by tianzhi in D:\CodeRepertory\Gitee\wdb_book_management)
+2018-01-25 14:49:19.255 [restartedMain] INFO  com.wdb007.baseservice.Application -
+				The following profiles are active: pub
+2018-01-25 14:49:19.257 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -
+				Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1432c9b7: startup date [Thu Jan 25 14:49:19 CST 2018]; root of context hierarchy
+2018-01-25 14:49:19.858 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c15af328] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-25 14:49:19.915 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer -
+				Tomcat initialized with port(s): 8809 (http)
+2018-01-25 14:49:19.915 [restartedMain] INFO  org.apache.catalina.core.StandardService -
+				Starting service [Tomcat]
+2018-01-25 14:49:19.915 [restartedMain] INFO  org.apache.catalina.core.StandardEngine -
+				Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-25 14:49:19.935 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+				Initializing Spring embedded WebApplicationContext
+2018-01-25 14:49:19.936 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader -
+				Root WebApplicationContext: initialization completed in 679 ms
+2018-01-25 14:49:19.974 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean -
+				Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-25 14:49:19.974 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-25 14:49:19.974 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-25 14:49:19.975 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-25 14:49:19.975 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-25 14:49:20.350 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_attachment/scanInitImageAttach],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.wdb007.baseservice.controller.BookAttachmentController.scanInitImageAttach(java.lang.String) throws java.lang.NumberFormatException,java.io.IOException
+2018-01-25 14:49:20.351 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_attachment/setBookCoverFromFiles],methods=[GET]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.BookAttachmentController.setBookCoverFromFiles(java.lang.String) throws java.lang.NumberFormatException,java.io.IOException
+2018-01-25 14:49:20.351 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_attachment/scanInitImageAttachTiming],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.wdb007.baseservice.controller.BookAttachmentController.initImageAttach(java.lang.String) throws java.lang.NumberFormatException,java.io.IOException
+2018-01-25 14:49:20.352 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_info/getBookInfoList],methods=[GET]}" onto public java.util.List<com.wdb007.baseservice.model.customer.BookInfoDetails> com.wdb007.baseservice.controller.BookInfoController.getBookDetailsByIsbnOrRFID(java.lang.String,java.lang.String)
+2018-01-25 14:49:20.352 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_info/getSingleBookInfo],methods=[GET]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.BookInfoController.GetBookInfo(java.lang.String)
+2018-01-25 14:49:20.353 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/bookmgmt/testFiles],methods=[GET]}" onto public java.io.File[] com.wdb007.baseservice.controller.GatherBookInfoController.testFileList(java.lang.String)
+2018-01-25 14:49:20.354 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/bookmgmt/resolveBookInfo],methods=[POST]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.GatherBookInfoController.resolveBookInfo(java.util.List<java.util.Map<java.lang.String, java.lang.String>>,com.wdb007.baseservice.model.GatherSourceTypeEnum)
+2018-01-25 14:49:20.354 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/bookmgmt/resolveBookInfoByISBN],methods=[GET]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.GatherBookInfoController.resolveBookInfo()
+2018-01-25 14:49:20.354 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/bookmgmt/gatherImagesByISBN],methods=[POST]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.GatherBookInfoController.gatherImagesByISBN(java.util.List<java.lang.String>)
+2018-01-25 14:49:20.355 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/dianping/resolveShopInfo],methods=[GET]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.GatherOrganizationController.resolveShopInfo()
+2018-01-25 14:49:20.355 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/],methods=[GET]}" onto public java.lang.String com.wdb007.baseservice.controller.HomeController.index()
+2018-01-25 14:49:20.356 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-01-25 14:49:20.356 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-01-25 14:49:20.357 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-01-25 14:49:20.357 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-01-25 14:49:20.358 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-25 14:49:20.358 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-25 14:49:20.442 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+				Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1432c9b7: startup date [Thu Jan 25 14:49:19 CST 2018]; root of context hierarchy
+2018-01-25 14:49:20.453 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 14:49:20.454 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 14:49:20.466 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 14:49:20.507 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer -
+				LiveReload server is running on port 35729
+2018-01-25 14:49:20.621 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Registering beans for JMX exposure on startup
+2018-01-25 14:49:20.625 [restartedMain] INFO  o.s.context.support.DefaultLifecycleProcessor -
+				Starting beans in phase 2147483647
+2018-01-25 14:49:20.626 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -
+				Context refreshed
+2018-01-25 14:49:20.626 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -
+				Found 1 custom documentation plugin(s)
+2018-01-25 14:49:20.630 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner -
+				Scanning for api listing references
+2018-01-25 14:49:20.700 [restartedMain] WARN  s.d.s.w.readers.parameter.ParameterDataTypeReader -
+				Trying to infer dataType com.wdb007.baseservice.model.GatherSourceTypeEnum
+2018-01-25 14:49:20.710 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor -
+				No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-01-25 14:49:20.711 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Initializing ProtocolHandler ["http-nio-8809"]
+2018-01-25 14:49:20.712 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Starting ProtocolHandler ["http-nio-8809"]
+2018-01-25 14:49:20.713 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool -
+				Using a shared selector for servlet write/read
+2018-01-25 14:49:20.718 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer -
+				Tomcat started on port(s): 8809 (http)
+2018-01-25 14:49:20.722 [restartedMain] INFO  com.wdb007.baseservice.Application -
+				Started Application in 1.497 seconds (JVM running for 193.942)
+2018-01-25 14:49:20.842 [restartedMain] INFO  com.wdb007.baseservice.Application -
+				SpringBoot Start Success
+2018-01-25 14:49:31.955 [Thread-30] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -
+				Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1432c9b7: startup date [Thu Jan 25 14:49:19 CST 2018]; root of context hierarchy
+2018-01-25 14:49:31.957 [Thread-30] INFO  o.s.context.support.DefaultLifecycleProcessor -
+				Stopping beans in phase 2147483647
+2018-01-25 14:49:31.957 [Thread-30] WARN  o.s.beans.factory.support.DisposableBeanAdapter -
+				Invocation of destroy method failed on bean with name 'classPathFileSystemWatcher': java.lang.NullPointerException
+2018-01-25 14:49:31.957 [Thread-30] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Unregistering JMX-exposed beans on shutdown
+2018-01-25 14:49:32.240 [restartedMain] INFO  com.wdb007.baseservice.Application -
+				Starting Application on DESKTOP-G9V90BP with PID 39992 (D:\CodeRepertory\Gitee\wdb_book_management\target\classes started by tianzhi in D:\CodeRepertory\Gitee\wdb_book_management)
+2018-01-25 14:49:32.240 [restartedMain] INFO  com.wdb007.baseservice.Application -
+				The following profiles are active: pub
+2018-01-25 14:49:32.244 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -
+				Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7736b347: startup date [Thu Jan 25 14:49:32 CST 2018]; root of context hierarchy
+2018-01-25 14:49:32.892 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c15af328] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-25 14:49:32.938 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer -
+				Tomcat initialized with port(s): 8809 (http)
+2018-01-25 14:49:32.938 [restartedMain] INFO  org.apache.catalina.core.StandardService -
+				Starting service [Tomcat]
+2018-01-25 14:49:32.938 [restartedMain] INFO  org.apache.catalina.core.StandardEngine -
+				Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-25 14:49:32.947 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+				Initializing Spring embedded WebApplicationContext
+2018-01-25 14:49:32.947 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader -
+				Root WebApplicationContext: initialization completed in 703 ms
+2018-01-25 14:49:32.970 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean -
+				Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-25 14:49:32.971 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-25 14:49:32.971 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-25 14:49:32.971 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-25 14:49:32.971 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-25 14:49:33.230 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_attachment/scanInitImageAttach],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.wdb007.baseservice.controller.BookAttachmentController.scanInitImageAttach(java.lang.String) throws java.lang.NumberFormatException,java.io.IOException
+2018-01-25 14:49:33.231 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_attachment/setBookCoverFromFiles],methods=[GET]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.BookAttachmentController.setBookCoverFromFiles(java.lang.String) throws java.lang.NumberFormatException,java.io.IOException
+2018-01-25 14:49:33.232 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_attachment/scanInitImageAttachTiming],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.wdb007.baseservice.controller.BookAttachmentController.initImageAttach(java.lang.String) throws java.lang.NumberFormatException,java.io.IOException
+2018-01-25 14:49:33.232 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_info/getBookInfoList],methods=[GET]}" onto public java.util.List<com.wdb007.baseservice.model.customer.BookInfoDetails> com.wdb007.baseservice.controller.BookInfoController.getBookDetailsByIsbnOrRFID(java.lang.String,java.lang.String)
+2018-01-25 14:49:33.232 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_info/getSingleBookInfo],methods=[GET]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.BookInfoController.GetBookInfo(java.lang.String)
+2018-01-25 14:49:33.234 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/bookmgmt/testFiles],methods=[GET]}" onto public java.io.File[] com.wdb007.baseservice.controller.GatherBookInfoController.testFileList(java.lang.String)
+2018-01-25 14:49:33.235 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/bookmgmt/resolveBookInfo],methods=[POST]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.GatherBookInfoController.resolveBookInfo(java.util.List<java.util.Map<java.lang.String, java.lang.String>>,com.wdb007.baseservice.model.GatherSourceTypeEnum)
+2018-01-25 14:49:33.235 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/bookmgmt/resolveBookInfoByISBN],methods=[GET]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.GatherBookInfoController.resolveBookInfo()
+2018-01-25 14:49:33.236 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/bookmgmt/gatherImagesByISBN],methods=[POST]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.GatherBookInfoController.gatherImagesByISBN(java.util.List<java.lang.String>)
+2018-01-25 14:49:33.237 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/dianping/resolveShopInfo],methods=[GET]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.GatherOrganizationController.resolveShopInfo()
+2018-01-25 14:49:33.237 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/],methods=[GET]}" onto public java.lang.String com.wdb007.baseservice.controller.HomeController.index()
+2018-01-25 14:49:33.239 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-01-25 14:49:33.240 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-01-25 14:49:33.240 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-01-25 14:49:33.241 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-01-25 14:49:33.242 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-25 14:49:33.243 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-25 14:49:33.324 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+				Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7736b347: startup date [Thu Jan 25 14:49:32 CST 2018]; root of context hierarchy
+2018-01-25 14:49:33.338 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 14:49:33.338 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 14:49:33.352 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 14:49:33.395 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer -
+				LiveReload server is running on port 35729
+2018-01-25 14:49:33.515 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Registering beans for JMX exposure on startup
+2018-01-25 14:49:33.519 [restartedMain] INFO  o.s.context.support.DefaultLifecycleProcessor -
+				Starting beans in phase 2147483647
+2018-01-25 14:49:33.519 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -
+				Context refreshed
+2018-01-25 14:49:33.519 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -
+				Found 1 custom documentation plugin(s)
+2018-01-25 14:49:33.523 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner -
+				Scanning for api listing references
+2018-01-25 14:49:33.578 [restartedMain] WARN  s.d.s.w.readers.parameter.ParameterDataTypeReader -
+				Trying to infer dataType com.wdb007.baseservice.model.GatherSourceTypeEnum
+2018-01-25 14:49:33.587 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor -
+				No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-01-25 14:49:33.589 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Initializing ProtocolHandler ["http-nio-8809"]
+2018-01-25 14:49:33.589 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Starting ProtocolHandler ["http-nio-8809"]
+2018-01-25 14:49:33.590 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool -
+				Using a shared selector for servlet write/read
+2018-01-25 14:49:33.595 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer -
+				Tomcat started on port(s): 8809 (http)
+2018-01-25 14:49:33.597 [restartedMain] INFO  com.wdb007.baseservice.Application -
+				Started Application in 1.393 seconds (JVM running for 206.817)
+2018-01-25 14:49:33.718 [restartedMain] INFO  com.wdb007.baseservice.Application -
+				SpringBoot Start Success
+2018-01-25 14:49:43.931 [restartedMain] INFO  com.wdb007.baseservice.Application -
+				Starting Application on DESKTOP-G9V90BP with PID 19088 (D:\CodeRepertory\Gitee\wdb_book_management\target\classes started by tianzhi in D:\CodeRepertory\Gitee\wdb_book_management)
+2018-01-25 14:49:43.935 [restartedMain] INFO  com.wdb007.baseservice.Application -
+				The following profiles are active: pub
+2018-01-25 14:49:43.992 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -
+				Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@71d8c315: startup date [Thu Jan 25 14:49:43 CST 2018]; root of context hierarchy
+2018-01-25 14:49:44.171 [background-preinit] INFO  org.hibernate.validator.internal.util.Version -
+				HV000001: Hibernate Validator 5.3.5.Final
+2018-01-25 14:49:45.601 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9f5966a8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-25 14:49:46.019 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer -
+				Tomcat initialized with port(s): 8809 (http)
+2018-01-25 14:49:46.031 [restartedMain] INFO  org.apache.catalina.core.StandardService -
+				Starting service [Tomcat]
+2018-01-25 14:49:46.032 [restartedMain] INFO  org.apache.catalina.core.StandardEngine -
+				Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-25 14:49:46.135 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+				Initializing Spring embedded WebApplicationContext
+2018-01-25 14:49:46.135 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader -
+				Root WebApplicationContext: initialization completed in 2143 ms
+2018-01-25 14:49:46.273 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean -
+				Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-25 14:49:46.277 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-25 14:49:46.277 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-25 14:49:46.277 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-25 14:49:46.278 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-25 14:49:47.330 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_attachment/setBookCoverFromFiles],methods=[GET]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.BookAttachmentController.setBookCoverFromFiles(java.lang.String) throws java.lang.NumberFormatException,java.io.IOException
+2018-01-25 14:49:47.331 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_attachment/scanInitImageAttach],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.wdb007.baseservice.controller.BookAttachmentController.scanInitImageAttach(java.lang.String) throws java.lang.NumberFormatException,java.io.IOException
+2018-01-25 14:49:47.332 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_attachment/scanInitImageAttachTiming],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.wdb007.baseservice.controller.BookAttachmentController.initImageAttach(java.lang.String) throws java.lang.NumberFormatException,java.io.IOException
+2018-01-25 14:49:47.335 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_info/getSingleBookInfo],methods=[GET]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.BookInfoController.GetBookInfo(java.lang.String)
+2018-01-25 14:49:47.336 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_info/getBookInfoList],methods=[GET]}" onto public java.util.List<com.wdb007.baseservice.model.customer.BookInfoDetails> com.wdb007.baseservice.controller.BookInfoController.getBookDetailsByIsbnOrRFID(java.lang.String,java.lang.String)
+2018-01-25 14:49:47.338 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/bookmgmt/resolveBookInfoByISBN],methods=[GET]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.GatherBookInfoController.resolveBookInfo()
+2018-01-25 14:49:47.338 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/bookmgmt/resolveBookInfo],methods=[POST]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.GatherBookInfoController.resolveBookInfo(java.util.List<java.util.Map<java.lang.String, java.lang.String>>,com.wdb007.baseservice.model.GatherSourceTypeEnum)
+2018-01-25 14:49:47.339 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/bookmgmt/testFiles],methods=[GET]}" onto public java.io.File[] com.wdb007.baseservice.controller.GatherBookInfoController.testFileList(java.lang.String)
+2018-01-25 14:49:47.340 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/bookmgmt/gatherImagesByISBN],methods=[POST]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.GatherBookInfoController.gatherImagesByISBN(java.util.List<java.lang.String>)
+2018-01-25 14:49:47.341 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/dianping/resolveShopInfo],methods=[GET]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.GatherOrganizationController.resolveShopInfo()
+2018-01-25 14:49:47.341 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/],methods=[GET]}" onto public java.lang.String com.wdb007.baseservice.controller.HomeController.index()
+2018-01-25 14:49:47.342 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-01-25 14:49:47.344 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-01-25 14:49:47.345 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-01-25 14:49:47.346 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-01-25 14:49:47.349 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-25 14:49:47.350 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-25 14:49:47.751 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+				Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@71d8c315: startup date [Thu Jan 25 14:49:43 CST 2018]; root of context hierarchy
+2018-01-25 14:49:47.824 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 14:49:47.825 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 14:49:47.875 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 14:49:48.149 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer -
+				LiveReload server is running on port 35729
+2018-01-25 14:49:48.289 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Registering beans for JMX exposure on startup
+2018-01-25 14:49:48.296 [restartedMain] INFO  o.s.context.support.DefaultLifecycleProcessor -
+				Starting beans in phase 2147483647
+2018-01-25 14:49:48.297 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -
+				Context refreshed
+2018-01-25 14:49:48.315 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -
+				Found 1 custom documentation plugin(s)
+2018-01-25 14:49:48.331 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner -
+				Scanning for api listing references
+2018-01-25 14:49:48.553 [restartedMain] WARN  s.d.s.w.readers.parameter.ParameterDataTypeReader -
+				Trying to infer dataType com.wdb007.baseservice.model.GatherSourceTypeEnum
+2018-01-25 14:49:48.582 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor -
+				No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-01-25 14:49:48.597 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Initializing ProtocolHandler ["http-nio-8809"]
+2018-01-25 14:49:48.610 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Starting ProtocolHandler ["http-nio-8809"]
+2018-01-25 14:49:48.622 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool -
+				Using a shared selector for servlet write/read
+2018-01-25 14:49:48.647 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer -
+				Tomcat started on port(s): 8809 (http)
+2018-01-25 14:49:48.653 [restartedMain] INFO  com.wdb007.baseservice.Application -
+				Started Application in 4.938 seconds (JVM running for 5.436)
+2018-01-25 14:49:49.139 [restartedMain] INFO  com.wdb007.baseservice.Application -
+				SpringBoot Start Success
+2018-01-25 14:49:59.600 [http-nio-8809-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+				Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-25 14:49:59.601 [http-nio-8809-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
+				FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-25 14:49:59.621 [http-nio-8809-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
+				FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2018-01-25 14:50:21.364 [restartedMain] INFO  com.wdb007.baseservice.Application -
+				Starting Application on DESKTOP-G9V90BP with PID 42728 (D:\CodeRepertory\Gitee\wdb_book_management\target\classes started by tianzhi in D:\CodeRepertory\Gitee\wdb_book_management)
+2018-01-25 14:50:21.365 [restartedMain] INFO  com.wdb007.baseservice.Application -
+				The following profiles are active: dev
+2018-01-25 14:50:21.411 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -
+				Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@608be66c: startup date [Thu Jan 25 14:50:21 CST 2018]; root of context hierarchy
+2018-01-25 14:50:21.581 [background-preinit] INFO  org.hibernate.validator.internal.util.Version -
+				HV000001: Hibernate Validator 5.3.5.Final
+2018-01-25 14:50:22.574 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a1afa031] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-25 14:50:22.924 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer -
+				Tomcat initialized with port(s): 8809 (http)
+2018-01-25 14:50:22.933 [restartedMain] INFO  org.apache.catalina.core.StandardService -
+				Starting service [Tomcat]
+2018-01-25 14:50:22.934 [restartedMain] INFO  org.apache.catalina.core.StandardEngine -
+				Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-25 14:50:23.021 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+				Initializing Spring embedded WebApplicationContext
+2018-01-25 14:50:23.021 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader -
+				Root WebApplicationContext: initialization completed in 1610 ms
+2018-01-25 14:50:23.133 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean -
+				Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-25 14:50:23.138 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-25 14:50:23.138 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-25 14:50:23.138 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-25 14:50:23.138 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-25 14:50:23.983 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_attachment/scanInitImageAttach],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.wdb007.baseservice.controller.BookAttachmentController.scanInitImageAttach(java.lang.String) throws java.lang.NumberFormatException,java.io.IOException
+2018-01-25 14:50:23.984 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_attachment/setBookCoverFromFiles],methods=[GET]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.BookAttachmentController.setBookCoverFromFiles(java.lang.String) throws java.lang.NumberFormatException,java.io.IOException
+2018-01-25 14:50:23.984 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_attachment/scanInitImageAttachTiming],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.wdb007.baseservice.controller.BookAttachmentController.initImageAttach(java.lang.String) throws java.lang.NumberFormatException,java.io.IOException
+2018-01-25 14:50:23.987 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_info/getSingleBookInfo],methods=[GET]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.BookInfoController.GetBookInfo(java.lang.String)
+2018-01-25 14:50:23.988 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_info/getBookInfoList],methods=[GET]}" onto public java.util.List<com.wdb007.baseservice.model.customer.BookInfoDetails> com.wdb007.baseservice.controller.BookInfoController.getBookDetailsByIsbnOrRFID(java.lang.String,java.lang.String)
+2018-01-25 14:50:23.990 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/bookmgmt/gatherImagesByISBN],methods=[POST]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.GatherBookInfoController.gatherImagesByISBN(java.util.List<java.lang.String>)
+2018-01-25 14:50:23.990 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/bookmgmt/resolveBookInfoByISBN],methods=[GET]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.GatherBookInfoController.resolveBookInfo()
+2018-01-25 14:50:23.990 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/bookmgmt/resolveBookInfo],methods=[POST]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.GatherBookInfoController.resolveBookInfo(java.util.List<java.util.Map<java.lang.String, java.lang.String>>,com.wdb007.baseservice.model.GatherSourceTypeEnum)
+2018-01-25 14:50:23.990 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/bookmgmt/testFiles],methods=[GET]}" onto public java.io.File[] com.wdb007.baseservice.controller.GatherBookInfoController.testFileList(java.lang.String)
+2018-01-25 14:50:23.991 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/dianping/resolveShopInfo],methods=[GET]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.GatherOrganizationController.resolveShopInfo()
+2018-01-25 14:50:23.992 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/],methods=[GET]}" onto public java.lang.String com.wdb007.baseservice.controller.HomeController.index()
+2018-01-25 14:50:23.993 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-01-25 14:50:23.995 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-01-25 14:50:23.996 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-01-25 14:50:23.997 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-01-25 14:50:24.000 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-25 14:50:24.001 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-25 14:50:24.280 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+				Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@608be66c: startup date [Thu Jan 25 14:50:21 CST 2018]; root of context hierarchy
+2018-01-25 14:50:24.330 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 14:50:24.330 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 14:50:24.361 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 14:50:24.529 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer -
+				LiveReload server is running on port 35729
+2018-01-25 14:50:24.564 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Registering beans for JMX exposure on startup
+2018-01-25 14:50:24.569 [restartedMain] INFO  o.s.context.support.DefaultLifecycleProcessor -
+				Starting beans in phase 2147483647
+2018-01-25 14:50:24.569 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -
+				Context refreshed
+2018-01-25 14:50:24.580 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -
+				Found 1 custom documentation plugin(s)
+2018-01-25 14:50:24.590 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner -
+				Scanning for api listing references
+2018-01-25 14:50:24.736 [restartedMain] WARN  s.d.s.w.readers.parameter.ParameterDataTypeReader -
+				Trying to infer dataType com.wdb007.baseservice.model.GatherSourceTypeEnum
+2018-01-25 14:50:24.754 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor -
+				No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-01-25 14:50:24.763 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Initializing ProtocolHandler ["http-nio-8809"]
+2018-01-25 14:50:24.771 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Starting ProtocolHandler ["http-nio-8809"]
+2018-01-25 14:50:24.781 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool -
+				Using a shared selector for servlet write/read
+2018-01-25 14:50:24.798 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer -
+				Tomcat started on port(s): 8809 (http)
+2018-01-25 14:50:24.804 [restartedMain] INFO  com.wdb007.baseservice.Application -
+				Started Application in 3.617 seconds (JVM running for 3.986)
+2018-01-25 14:50:24.804 [restartedMain] INFO  com.wdb007.baseservice.Application -
+				SpringBoot Start Success
+2018-01-25 14:50:36.173 [http-nio-8809-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+				Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-25 14:50:36.174 [http-nio-8809-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
+				FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-25 14:50:36.187 [http-nio-8809-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
+				FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2018-01-25 14:51:31.226 [Thread-6] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -
+				Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@608be66c: startup date [Thu Jan 25 14:50:21 CST 2018]; root of context hierarchy
+2018-01-25 14:51:31.227 [Thread-6] INFO  o.s.context.support.DefaultLifecycleProcessor -
+				Stopping beans in phase 2147483647
+2018-01-25 14:51:31.228 [Thread-6] WARN  o.s.beans.factory.support.DisposableBeanAdapter -
+				Invocation of destroy method failed on bean with name 'classPathFileSystemWatcher': java.lang.NullPointerException
+2018-01-25 14:51:31.228 [Thread-6] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Unregistering JMX-exposed beans on shutdown
+2018-01-25 14:51:31.477 [restartedMain] INFO  com.wdb007.baseservice.Application -
+				Starting Application on DESKTOP-G9V90BP with PID 42728 (D:\CodeRepertory\Gitee\wdb_book_management\target\classes started by tianzhi in D:\CodeRepertory\Gitee\wdb_book_management)
+2018-01-25 14:51:31.477 [restartedMain] INFO  com.wdb007.baseservice.Application -
+				The following profiles are active: dev
+2018-01-25 14:51:31.480 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -
+				Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3b5207dc: startup date [Thu Jan 25 14:51:31 CST 2018]; root of context hierarchy
+2018-01-25 14:51:31.976 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a1afa031] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-25 14:51:32.027 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer -
+				Tomcat initialized with port(s): 8809 (http)
+2018-01-25 14:51:32.027 [restartedMain] INFO  org.apache.catalina.core.StandardService -
+				Starting service [Tomcat]
+2018-01-25 14:51:32.028 [restartedMain] INFO  org.apache.catalina.core.StandardEngine -
+				Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-25 14:51:32.039 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+				Initializing Spring embedded WebApplicationContext
+2018-01-25 14:51:32.040 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader -
+				Root WebApplicationContext: initialization completed in 560 ms
+2018-01-25 14:51:32.066 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean -
+				Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-25 14:51:32.067 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-25 14:51:32.067 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-25 14:51:32.067 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-25 14:51:32.067 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-25 14:51:32.313 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_attachment/scanInitImageAttach],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.wdb007.baseservice.controller.BookAttachmentController.scanInitImageAttach(java.lang.String) throws java.lang.NumberFormatException,java.io.IOException
+2018-01-25 14:51:32.313 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_attachment/setBookCoverFromFiles],methods=[GET]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.BookAttachmentController.setBookCoverFromFiles(java.lang.String) throws java.lang.NumberFormatException,java.io.IOException
+2018-01-25 14:51:32.314 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_attachment/scanInitImageAttachTiming],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.wdb007.baseservice.controller.BookAttachmentController.initImageAttach(java.lang.String) throws java.lang.NumberFormatException,java.io.IOException
+2018-01-25 14:51:32.314 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_info/getSingleBookInfo],methods=[GET]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.BookInfoController.GetBookInfo(java.lang.String)
+2018-01-25 14:51:32.314 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_info/getBookInfoList],methods=[GET]}" onto public java.util.List<com.wdb007.baseservice.model.customer.BookInfoDetails> com.wdb007.baseservice.controller.BookInfoController.getBookDetailsByIsbnOrRFID(java.lang.String,java.lang.String)
+2018-01-25 14:51:32.316 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/bookmgmt/gatherImagesByISBN],methods=[POST]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.GatherBookInfoController.gatherImagesByISBN(java.util.List<java.lang.String>)
+2018-01-25 14:51:32.316 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/bookmgmt/resolveBookInfoByISBN],methods=[GET]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.GatherBookInfoController.resolveBookInfo()
+2018-01-25 14:51:32.316 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/bookmgmt/resolveBookInfo],methods=[POST]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.GatherBookInfoController.resolveBookInfo(java.util.List<java.util.Map<java.lang.String, java.lang.String>>,com.wdb007.baseservice.model.GatherSourceTypeEnum)
+2018-01-25 14:51:32.316 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/bookmgmt/testFiles],methods=[GET]}" onto public java.io.File[] com.wdb007.baseservice.controller.GatherBookInfoController.testFileList(java.lang.String)
+2018-01-25 14:51:32.317 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/dianping/resolveShopInfo],methods=[GET]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.GatherOrganizationController.resolveShopInfo()
+2018-01-25 14:51:32.317 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/],methods=[GET]}" onto public java.lang.String com.wdb007.baseservice.controller.HomeController.index()
+2018-01-25 14:51:32.317 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-01-25 14:51:32.318 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-01-25 14:51:32.318 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-01-25 14:51:32.318 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-01-25 14:51:32.319 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-25 14:51:32.320 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-25 14:51:32.377 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+				Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3b5207dc: startup date [Thu Jan 25 14:51:31 CST 2018]; root of context hierarchy
+2018-01-25 14:51:32.385 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 14:51:32.385 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 14:51:32.392 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 14:51:32.419 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer -
+				LiveReload server is running on port 35729
+2018-01-25 14:51:32.442 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Registering beans for JMX exposure on startup
+2018-01-25 14:51:32.445 [restartedMain] INFO  o.s.context.support.DefaultLifecycleProcessor -
+				Starting beans in phase 2147483647
+2018-01-25 14:51:32.445 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -
+				Context refreshed
+2018-01-25 14:51:32.446 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -
+				Found 1 custom documentation plugin(s)
+2018-01-25 14:51:32.448 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner -
+				Scanning for api listing references
+2018-01-25 14:51:32.488 [restartedMain] WARN  s.d.s.w.readers.parameter.ParameterDataTypeReader -
+				Trying to infer dataType com.wdb007.baseservice.model.GatherSourceTypeEnum
+2018-01-25 14:51:32.496 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor -
+				No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-01-25 14:51:32.497 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Initializing ProtocolHandler ["http-nio-8809"]
+2018-01-25 14:51:32.497 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Starting ProtocolHandler ["http-nio-8809"]
+2018-01-25 14:51:32.499 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool -
+				Using a shared selector for servlet write/read
+2018-01-25 14:51:32.502 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer -
+				Tomcat started on port(s): 8809 (http)
+2018-01-25 14:51:32.505 [restartedMain] INFO  com.wdb007.baseservice.Application -
+				Started Application in 1.069 seconds (JVM running for 71.686)
+2018-01-25 14:51:32.505 [restartedMain] INFO  com.wdb007.baseservice.Application -
+				SpringBoot Start Success
+2018-01-25 14:51:41.867 [Thread-11] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -
+				Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3b5207dc: startup date [Thu Jan 25 14:51:31 CST 2018]; root of context hierarchy
+2018-01-25 14:51:41.868 [Thread-11] INFO  o.s.context.support.DefaultLifecycleProcessor -
+				Stopping beans in phase 2147483647
+2018-01-25 14:51:41.868 [Thread-11] WARN  o.s.beans.factory.support.DisposableBeanAdapter -
+				Invocation of destroy method failed on bean with name 'classPathFileSystemWatcher': java.lang.NullPointerException
+2018-01-25 14:51:41.868 [Thread-11] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Unregistering JMX-exposed beans on shutdown
+2018-01-25 14:51:42.047 [restartedMain] INFO  com.wdb007.baseservice.Application -
+				Starting Application on DESKTOP-G9V90BP with PID 42728 (D:\CodeRepertory\Gitee\wdb_book_management\target\classes started by tianzhi in D:\CodeRepertory\Gitee\wdb_book_management)
+2018-01-25 14:51:42.047 [restartedMain] INFO  com.wdb007.baseservice.Application -
+				The following profiles are active: dev
+2018-01-25 14:51:42.049 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -
+				Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4cf23782: startup date [Thu Jan 25 14:51:42 CST 2018]; root of context hierarchy
+2018-01-25 14:51:42.430 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a1afa031] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-25 14:51:42.480 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer -
+				Tomcat initialized with port(s): 8809 (http)
+2018-01-25 14:51:42.480 [restartedMain] INFO  org.apache.catalina.core.StandardService -
+				Starting service [Tomcat]
+2018-01-25 14:51:42.481 [restartedMain] INFO  org.apache.catalina.core.StandardEngine -
+				Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-25 14:51:42.497 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+				Initializing Spring embedded WebApplicationContext
+2018-01-25 14:51:42.497 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader -
+				Root WebApplicationContext: initialization completed in 448 ms
+2018-01-25 14:51:42.526 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean -
+				Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-25 14:51:42.526 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-25 14:51:42.526 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-25 14:51:42.526 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-25 14:51:42.526 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-25 14:51:42.761 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_attachment/scanInitImageAttach],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.wdb007.baseservice.controller.BookAttachmentController.scanInitImageAttach(java.lang.String) throws java.lang.NumberFormatException,java.io.IOException
+2018-01-25 14:51:42.761 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_attachment/setBookCoverFromFiles],methods=[GET]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.BookAttachmentController.setBookCoverFromFiles(java.lang.String) throws java.lang.NumberFormatException,java.io.IOException
+2018-01-25 14:51:42.762 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_attachment/scanInitImageAttachTiming],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.wdb007.baseservice.controller.BookAttachmentController.initImageAttach(java.lang.String) throws java.lang.NumberFormatException,java.io.IOException
+2018-01-25 14:51:42.762 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_info/getSingleBookInfo],methods=[GET]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.BookInfoController.GetBookInfo(java.lang.String)
+2018-01-25 14:51:42.762 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/book_info/getBookInfoList],methods=[GET]}" onto public java.util.List<com.wdb007.baseservice.model.customer.BookInfoDetails> com.wdb007.baseservice.controller.BookInfoController.getBookDetailsByIsbnOrRFID(java.lang.String,java.lang.String)
+2018-01-25 14:51:42.763 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/bookmgmt/gatherImagesByISBN],methods=[POST]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.GatherBookInfoController.gatherImagesByISBN(java.util.List<java.lang.String>)
+2018-01-25 14:51:42.763 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/bookmgmt/resolveBookInfoByISBN],methods=[GET]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.GatherBookInfoController.resolveBookInfo()
+2018-01-25 14:51:42.764 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/bookmgmt/resolveBookInfo],methods=[POST]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.GatherBookInfoController.resolveBookInfo(java.util.List<java.util.Map<java.lang.String, java.lang.String>>,com.wdb007.baseservice.model.GatherSourceTypeEnum)
+2018-01-25 14:51:42.764 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/bookmgmt/testFiles],methods=[GET]}" onto public java.io.File[] com.wdb007.baseservice.controller.GatherBookInfoController.testFileList(java.lang.String)
+2018-01-25 14:51:42.764 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/dianping/resolveShopInfo],methods=[GET]}" onto public com.wdb007.baseservice.utility.response.BaseResponse<java.lang.Object> com.wdb007.baseservice.controller.GatherOrganizationController.resolveShopInfo()
+2018-01-25 14:51:42.764 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/],methods=[GET]}" onto public java.lang.String com.wdb007.baseservice.controller.HomeController.index()
+2018-01-25 14:51:42.765 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-01-25 14:51:42.766 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-01-25 14:51:42.766 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-01-25 14:51:42.766 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-01-25 14:51:42.767 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-25 14:51:42.767 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-25 14:51:42.816 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+				Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4cf23782: startup date [Thu Jan 25 14:51:42 CST 2018]; root of context hierarchy
+2018-01-25 14:51:42.824 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 14:51:42.824 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 14:51:42.833 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 14:51:42.861 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer -
+				LiveReload server is running on port 35729
+2018-01-25 14:51:42.882 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Registering beans for JMX exposure on startup
+2018-01-25 14:51:42.887 [restartedMain] INFO  o.s.context.support.DefaultLifecycleProcessor -
+				Starting beans in phase 2147483647
+2018-01-25 14:51:42.887 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -
+				Context refreshed
+2018-01-25 14:51:42.888 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -
+				Found 1 custom documentation plugin(s)
+2018-01-25 14:51:42.890 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner -
+				Scanning for api listing references
+2018-01-25 14:51:42.931 [restartedMain] WARN  s.d.s.w.readers.parameter.ParameterDataTypeReader -
+				Trying to infer dataType com.wdb007.baseservice.model.GatherSourceTypeEnum
+2018-01-25 14:51:42.937 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor -
+				No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-01-25 14:51:42.938 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Initializing ProtocolHandler ["http-nio-8809"]
+2018-01-25 14:51:42.938 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Starting ProtocolHandler ["http-nio-8809"]
+2018-01-25 14:51:42.939 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool -
+				Using a shared selector for servlet write/read
+2018-01-25 14:51:42.942 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer -
+				Tomcat started on port(s): 8809 (http)
+2018-01-25 14:51:42.944 [restartedMain] INFO  com.wdb007.baseservice.Application -
+				Started Application in 0.923 seconds (JVM running for 82.126)
+2018-01-25 14:51:42.944 [restartedMain] INFO  com.wdb007.baseservice.Application -
+				SpringBoot Start Success

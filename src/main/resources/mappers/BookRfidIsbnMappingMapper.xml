@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wdb007.baseservice.mapper.BookRfidIsbnMappingMapper">
+  <resultMap id="BaseResultMap" type="com.wdb007.baseservice.model.BookRfidIsbnMapping">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="isbn" jdbcType="VARCHAR" property="isbn" />
+    <result column="rfid_tag_id" jdbcType="VARCHAR" property="rfid_tag_id" />
+    <result column="isbn_sequence" jdbcType="INTEGER" property="isbn_sequence" />
+    <result column="isbn_type" jdbcType="BIT" property="isbn_type" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, isbn, rfid_tag_id, isbn_sequence, isbn_type, status
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from book_rfid_isbn_mapping
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  
+    <select id="selectIsbnMappingByIsbnAndSeq"  resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from book_rfid_isbn_mapping
+    where isbn = #{arg0} and isbn_sequence=#{arg1}
+  </select>
+  
+  
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from book_rfid_isbn_mapping
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.wdb007.baseservice.model.BookRfidIsbnMapping">
+    insert into book_rfid_isbn_mapping (id, isbn, rfid_tag_id, 
+      isbn_sequence, isbn_type, status
+      )
+    values (#{id,jdbcType=BIGINT}, #{isbn,jdbcType=VARCHAR}, #{rfid_tag_id,jdbcType=VARCHAR}, 
+      #{isbn_sequence,jdbcType=INTEGER}, #{isbn_type,jdbcType=BIT}, #{status,jdbcType=INTEGER}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.wdb007.baseservice.model.BookRfidIsbnMapping">
+    insert into book_rfid_isbn_mapping
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="isbn != null">
+        isbn,
+      </if>
+      <if test="rfid_tag_id != null">
+        rfid_tag_id,
+      </if>
+      <if test="isbn_sequence != null">
+        isbn_sequence,
+      </if>
+      <if test="isbn_type != null">
+        isbn_type,
+      </if>
+      <if test="status != null">
+        status,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="isbn != null">
+        #{isbn,jdbcType=VARCHAR},
+      </if>
+      <if test="rfid_tag_id != null">
+        #{rfid_tag_id,jdbcType=VARCHAR},
+      </if>
+      <if test="isbn_sequence != null">
+        #{isbn_sequence,jdbcType=INTEGER},
+      </if>
+      <if test="isbn_type != null">
+        #{isbn_type,jdbcType=BIT},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.wdb007.baseservice.model.BookRfidIsbnMapping">
+    update book_rfid_isbn_mapping
+    <set>
+      <if test="isbn != null">
+        isbn = #{isbn,jdbcType=VARCHAR},
+      </if>
+      <if test="rfid_tag_id != null">
+        rfid_tag_id = #{rfid_tag_id,jdbcType=VARCHAR},
+      </if>
+      <if test="isbn_sequence != null">
+        isbn_sequence = #{isbn_sequence,jdbcType=INTEGER},
+      </if>
+      <if test="isbn_type != null">
+        isbn_type = #{isbn_type,jdbcType=BIT},
+      </if>
+      <if test="status != null">
+        status = #{status,jdbcType=INTEGER},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.wdb007.baseservice.model.BookRfidIsbnMapping">
+    update book_rfid_isbn_mapping
+    set isbn = #{isbn,jdbcType=VARCHAR},
+      rfid_tag_id = #{rfid_tag_id,jdbcType=VARCHAR},
+      isbn_sequence = #{isbn_sequence,jdbcType=INTEGER},
+      isbn_type = #{isbn_type,jdbcType=BIT},
+      status = #{status,jdbcType=INTEGER}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

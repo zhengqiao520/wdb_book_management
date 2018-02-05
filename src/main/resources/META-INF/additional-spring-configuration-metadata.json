@@ -1,0 +1,27 @@
+{"properties": [
+  {
+    "name": "bookinfo_gather.url",
+    "type": "java.lang.String",
+    "description": "A description for 'bookinfo_gather.url'"
+  },
+  {
+    "name": "bookinfo_gather.success_filepath",
+    "type": "java.lang.String",
+    "description": "A description for 'bookinfo_gather.success_filepath'"
+  },
+  {
+    "name": "bookinfo_gather.fail_filepath",
+    "type": "java.lang.String",
+    "description": "A description for 'bookinfo_gather.fail_filepath'"
+  },
+  {
+    "name": "bookinfo_gather.image_path",
+    "type": "java.lang.String",
+    "description": "A description for 'bookinfo_gather.image_path'"
+  },
+  {
+    "name": "bookinfo_gather.book_coverpath",
+    "type": "java.lang.String",
+    "description": "A description for 'bookinfo_gather.book_coverpath'"
+  }
+]}
